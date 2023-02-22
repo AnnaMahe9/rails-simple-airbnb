@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :flats
+  # get 'flats', to: 'flats#index'
+  # get 'flats/new', to: 'flats#new'
+  # post 'flats', to: 'flats#create'
+  # get 'flats/edit', to: 'flats#edit', as: :flat_edit
+  # patch 'flats/:id', to: 'flats#update'
+  # delete 'flats/:id', to: 'flats#destroy'
+  # get 'flats/:id', to: 'flats#show', as: :flat
 end

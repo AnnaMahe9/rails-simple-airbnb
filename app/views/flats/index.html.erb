@@ -1,0 +1,26 @@
+<h1>All our flats</h1>
+
+<% @flats.each do |flat| %>
+<div class="flat-card" style="width: 18rem;">
+  <img src="/https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200)" alt="Photo">
+  <div class="card-body">
+    <h5 class="card-title"><%= flat.name%></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= flat.address %></h6>
+    <a href="#" class="card-link"><%= flat.number_of_guests %></a>
+    <a href="#" class="card-link">  <%= flat.price_per_night %></a>
+  </div>
+  <div class="flat-card-actions">
+  <p>
+      <%= link_to "More info", flat %>
+    </p>
+  </div>
+</div>
+
+
+
+
+
+  <% end %>
+</div>
+
+ <%= link_to "New flat", new_flat_path %>
